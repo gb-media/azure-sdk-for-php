@@ -1,5 +1,31 @@
-[![Build Status](https://travis-ci.org/Azure/azure-sdk-for-php.svg?branch=master)](https://travis-ci.org/Azure/azure-sdk-for-php)
-[![Latest Stable Version](https://poser.pugx.org/microsoft/windowsazure/v/stable)](https://packagist.org/packages/microsoft/windowsazure)
+# Forked repository from Microsoft Azure SDK for PHP
+
+See here: [github.com/Azure/azure-sdk-for-php](https://github.com/Azure/azure-sdk-for-php)
+
+This repository is customized 
+
+- PHP: ^7.4.3 || ^8.0
+- Guzzle: ^7.2
+- folder (bin, doc, example, tests) and some root files removed
+
+modify `composer.json` like this:
+```
+...
+"repositories": [
+    {
+        "type": "vcs",
+        "url": "https://github.com/gb-media/azure-sdk-for-php"
+    },
+    ...
+],
+"require": {
+    "php": "^7.4.3 || ^8.0",
+    "microsoft/windowsazure": "dev-feature/guzzle7",
+    ...
+},
+...
+```
+
 
 # Microsoft Azure SDK for PHP
 
